@@ -46,6 +46,9 @@
   padding: 0 1.25rem;
   height: 100%;
   cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #888;
+  margin: 0 0.2rem;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -98,6 +101,7 @@ a .mobile {
 .nav_links {
   font-size: $font-size-base;
   font-weight: 400;
+  font-family: monospace !important;
   color: $color-client-1;
   text-transform: uppercase;
   position: relative;
@@ -111,7 +115,8 @@ a .mobile {
 }
 
 .nav_item:hover {
-  background-color: darken($color-client-5, 5%);
+ 
+  background: linear-gradient(135deg, #e44141, #4f2af3);
 }
 
 @media screen and (max-width: 1440px) {
@@ -194,7 +199,7 @@ a .mobile {
     }
 
     .nav_links:hover {
-      background-color: $color-client-3;
+      background: linear-gradient(135deg, #e44141, #4f2af3);
     }
   }
 
@@ -269,7 +274,7 @@ a .mobile {
     }
 
     .nav_links:hover {
-      background-color: $color-client-3;
+      background: linear-gradient(135deg, #e44141, #4f2af3);
     }
   }
   .nav_item a:before {
@@ -296,7 +301,7 @@ a .mobile {
     }
 
     .nav_links:hover {
-      background-color: $color-client-3;
+      background: linear-gradient(135deg, #e44141, #4f2af3);
     }
   }
   .nav_item a:before {

@@ -13,13 +13,12 @@ import { TfiArrowCircleRight } from 'react-icons/tfi';
 import SectionCollection from '@/components/SectionCollection';
 import Grid from '@/components/Grid/';
 import GridItem from '@/components/Grid/GridItem';
-import Presentation3d from '@/components/Presentation3d'
+import Presentation3d from '@/components/Presentation3d';
 import { SlideInLeft } from '@/components/animations/reveal/SlideInLeft';
 import { Reveal } from '@/components/animations/reveal/Reveal';
+import Button from '@/components/Button';
 
 import styles from './page.module.css';
-
-const phrase = 'E-sportkurser med fokus på teamwork, fair-play och gemenskap';
 
 const data = [
   { image: '/fortnite.jpg', title: 'Fortnite', description: 'Description 1' },
@@ -57,12 +56,6 @@ export default function Home() {
   const [showLoadingSection, setShowLoadingSection] = useState(true);
   const { setSize } = useContext(CursorContext);
 
-  const styledPhrase = phrase
-    .split('')
-    .map((char, index) => (
-      <Magnetic key={index}>{char === ' ' ? '\u00A0' : char}</Magnetic>
-    ));
-
   const handleClick = () => {
     setShowMoney(true);
     setTimeout(() => {
@@ -85,50 +78,47 @@ export default function Home() {
         <GridLines />
         <TopSectionsWrapper />
         <div className={styles.contentWrapper}>
-          <section className={styles.section}>
-          <p
-              style={{
-                color: '#e0e0e0',
-                fontSize: '1.5rem',
-                textAlign: 'left',
-              }}
-            >
-             I wanna give a huge thanks to{' '}
-              <span style={{ color: 'aqua', fontWeight: 700 }}>
-                Anik Devaugn{' '}
-              </span>{' '}
-              - The designer, who connected me with my Mentor{' '}
-              <span style={{ color: 'aqua', fontWeight: 700 }}>
-                Mikeal Bolmstam
-              </span>
-              , who is a fullstack developer, Lead developer at DeGaming <br />
-              <span style={{ color: 'aqua', fontWeight: 700 }}>
-                Richard Larsson
-              </span>{' '}
-              is the CTO - And Co-founder at the Gaming - Boss man.
-              <br />
-              And{' '}
-              <span style={{ color: 'aqua', fontWeight: 700 }}>
-                Emil Ahmad
-              </span>{' '}
-              is the CEO and Co-Founder BIG BOSS MAN!
-              <br />
-              <span
-                style={{
-                  color: '#D548E9',
-                  textShadow: '1px 1px 1px aqua',
-                  fontSize: '2rem',
-                  fontWeight: 700,
-                  display: 'flex',
-                  cursor: 'pointer'
-                }}
-              >
-                {styledPhrase}
-              </span>
-              <br /> <br />
-              It&apos;s and awesome team and I&apos;m greatful I had the change
-              to work with these people 🙏
-            </p>
+          <section className={styles.section} id='read'>
+            <div className={styles.center}>
+              <p>
+                I wanna give a huge thanks to{' '}
+                <span style={{ color: 'aqua', fontWeight: 700 }}>
+                  Anik Devaugn{' '}
+                </span>{' '}
+                - The designer, who connected me with my Mentor{' '}
+                <span style={{ color: 'aqua', fontWeight: 700 }}>
+                  Mikeal Bolmstam
+                </span>
+                , who is a fullstack developer, Lead developer at DeGaming{' '}
+                <br />
+                <span style={{ color: 'aqua', fontWeight: 700 }}>
+                  Richard Larsson
+                </span>{' '}
+                is the CTO - And Co-founder at the Gaming - Boss man.
+                <br />
+                And{' '}
+                <span style={{ color: 'aqua', fontWeight: 700 }}>
+                  Emil Ahmad
+                </span>{' '}
+                is the CEO and Co-Founder BIG BOSS MAN!
+                <br />
+                <span
+                  style={{
+                    color: '#D548E9',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    margin: '2rem 0 1rem',
+                    pointerEvents: 'auto',
+                  }}
+                >
+                  What can I say? these people made my time awesome at DeGaming!
+                  🙏
+                </span>
+              </p>
+              <Button theme='outlined'>
+                <a href='/internship/team'>The team</a>
+              </Button>
+            </div>
             <div
               className={styles.center}
               onMouseEnter={() => {
@@ -137,15 +127,13 @@ export default function Home() {
               }}
               onMouseLeave={() => setSize('small')}
             >
-              {/*  <h3 className={styles.phrase}>{styledPhrase}</h3> */}
-              <h3 className={styles.phrase}>
-                E-sportkurser med fokus på teamwork, fair-play och gemenskap
-              </h3>
               <div style={{ textAlign: 'left', marginBottom: '2rem' }}>
                 <SlideInLeft>
-                  <p className={styles.p}>
-                    Utveckla ditt spelande tillsammans med en erfaren coach och
-                    motiverade lagkamrater.
+                  <p style={{ textAlign: 'left', marginBottom: '2rem' }}>
+                    DeGaming is positioned at the vanguard of
+                    blockchain-integrated gambling solutions. They provide an
+                    interactive, safe, and transparent space for their gaming
+                    clients to experience the future of iGaming
                   </p>
                 </SlideInLeft>
                 <SlideInLeft>
@@ -316,7 +304,7 @@ export default function Home() {
               el='h2'
             />
             <Presentation3d />
-            </section>
+          </section>
           <section className={styles.section}>
             <AnimatedText
               text='VÅRA AKTIVITETER'
@@ -356,8 +344,6 @@ export default function Home() {
               </p>
             </SlideInLeft>
           </section>
-
-        
         </div>
 
         <section className={styles.center}>

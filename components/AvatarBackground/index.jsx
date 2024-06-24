@@ -5,44 +5,6 @@ import { Canvas } from '@react-three/fiber';
 import { Experience2 } from '../Experience2';
 
 const AvatarBackground = ({ selectedScript, setSelectedScript }) => {
-  const bubblesContainerRef = useRef(null);
-
-  useEffect(() => {
-    const between = (min, max) => Math.random() * (max - min) + min;
-    const colors = ['#e4414180', '#4f2af3a9'];
-
-    const interval = setInterval(() => {
-      const bubble = document.createElement('div');
-      bubble.classList.add('bubble');
-
-      bubblesContainerRef.current.appendChild(bubble);
-
-      bubble.style.left = `${between(0, 100)}%`;
-
-      const sizePx = `${between(4, 8)}px`;
-
-      const floatingBubbleKeyFrames = [{ top: '100%' }, { top: `-${sizePx}` }];
-
-      const floatingAnimation = bubble.animate(floatingBubbleKeyFrames, {
-        duration: between(10000, 40000),
-        fill: 'forwards',
-      });
-
-      floatingAnimation.onfinish = () => {
-        bubblesContainerRef.current.removeChild(bubble);
-      };
-
-      bubble.style.width = sizePx;
-      bubble.style.height = sizePx;
-
-      const randomColorIndex = Math.floor(Math.random() * colors.length);
-      bubble.style.background = colors[randomColorIndex];
-
-      bubble.style.opacity = `${between(20, 100)}%`;
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const handleTagClick = (script) => {
     setSelectedScript(script);
@@ -53,7 +15,6 @@ const AvatarBackground = ({ selectedScript, setSelectedScript }) => {
       <div>
         <div className='glow'></div>
       </div>
-      <div ref={bubblesContainerRef} id='bubbles'></div>
       <div className='dashboard-border'>
         <div className='dashboard'>
           <div className='buttons'>

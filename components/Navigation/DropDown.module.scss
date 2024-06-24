@@ -3,7 +3,7 @@
 .dropdown_menu {
    position: fixed;
    top: 100px;
-   margin-left: -1.3rem;
+   margin-left: 0;
    min-width: 200px;
    min-height: fit-content;
    background-color: $color-bg;
@@ -12,6 +12,7 @@
    overflow: hidden;
    transition: height 500ms;
     z-index: 999;
+    border-radius: 20px;
 
  }
  
@@ -23,7 +24,7 @@
  
  
  .dropdown_menu li:hover {
-    background: lighten($color-client-5, 0.05%);
+   background: linear-gradient(135deg, #e44141, #4f2af3);
 
     a:before {
        opacity: 0;

@@ -10,7 +10,7 @@ export const Experience2 = ({selectedScript}) => {
   return (
       <>
       <OrbitControls />
-      <Environment preset='sunset' />
+      <Environment preset='warehouse' />
       <Avatar2 position={[0, -3, 5]} scale={2} selectedScript={selectedScript} />
 
 

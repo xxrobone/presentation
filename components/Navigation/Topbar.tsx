@@ -28,7 +28,7 @@ const Topbar: React.FC<TopMenuProps> = () => {
         onMouseLeave={() => setSize('small')}
       >
         <a href='/' target='_blank' rel='noopener noreferrer'>
-          By <h2 className={styles.sub}>Robert Wägar FEA20ST</h2>
+         <h2 className={styles.sub}>Robert Wägar FEA22STO</h2>
         </a>
       </div>
       <button>

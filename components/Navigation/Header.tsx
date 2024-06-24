@@ -71,11 +71,7 @@ const Header: React.FC = () => {
             />
           </DropDown>
         </NavItem>
-        <NavItem
-          title='Some fun stuff'
-          icon={<RiArticleLine />}
-          url='/fun-stuff'
-        />
+        <NavItem title='Project' icon={<RiArticleLine />} url='/project' />
       </Nav>
     </div>
   );
