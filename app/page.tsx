@@ -148,8 +148,8 @@ export default function Home() {
                     <span style={{ color: 'white' }}>
                       <TfiArrowCircleRight />
                     </span>
-                    &nbsp; Tränarledda e-sportkurser för barn och unga i
-                    åldrarna 8 - 18 år.
+                    &nbsp; They`re an online platform. Pioneering a new ecnomic
+                    model for the industry.
                   </p>
                 </SlideInLeft>
                 <SlideInLeft>
@@ -164,8 +164,9 @@ export default function Home() {
                     <span style={{ color: 'white' }}>
                       <TfiArrowCircleRight />
                     </span>
-                    &nbsp; Träna e-sport med andra likasinnade och upplev
-                    lagidrottens gemenskap fast i e-sportens spännande värld.
+                    &nbsp; Creating Web3 Casino Bankroll Liquidity Provider And
+                    Seizing The Opportunity To Grow Ordinary peoples Investments
+                    In An Exciting, Evolving Market.
                   </p>
                 </SlideInLeft>
                 <SlideInLeft>
@@ -180,33 +181,185 @@ export default function Home() {
                     <span style={{ color: 'white' }}>
                       <TfiArrowCircleRight />
                     </span>
-                    &nbsp; Ta ditt spelande till nästa nivå i en trygg miljö där
-                    vi fokuserar på laganda och gemenskap.
+                    &nbsp; Degaming makes it possible to instantly deploy a
+                    Casino and start growing your own market! with their
+                    customizable SDK
                   </p>
                 </SlideInLeft>
                 <br />
+                <AnimatedText
+                  text='Welcome! ...'
+                  className={styles.title}
+                  el='h2'
+                />
                 <SlideInLeft>
                   <p className={styles.p}>
-                    I vår E-sportskola i Gustavsberg utanför Stockholm får barn
-                    och unga i åldrarna 8 - 18 år möjlighet att spela
-                    tillsammans med andra barn i samma åldrar med en tränare som
-                    coachar, stöttar och motiverar. I vår lokal på Värmdö finns
-                    12 spelriggar med allt som behövs för att e-sporta och ha
-                    roligt tillsammans.
+                    ...to my internship presentation at DeGaming Group. Here,
+                    you can explore my work with advanced web technologies like
+                    Next.js, Wagmi, Viem, MUI, Recharts, and Typescript.
+                    Discover my key tasks, the tools I used, the mentorship I
+                    received, and the valuable lessons I learned. Enjoy!
                   </p>
                 </SlideInLeft>
+                <AnimatedText text='Purpose' className={styles.title} el='h2' />
                 <SlideInLeft>
                   <p className={styles.p}>
-                    Under våra lärarledda träningspass går en av våra coacher
-                    igenom grunderna i spelet och förklarar vad var och en bör
-                    tänka på för att spela sin roll i laget på bästa sätt.{' '}
-                    <br />
-                    Under matcherna ger coachen personliga tips på vad spelaren
-                    bör tänka på och hur spelaren bör agera i olika situationer.
-                    Efter varje match går vi gemensamt igenom vad som gick bra
-                    och vad som kan förbättras. <br /> Våra ledord som
-                    genomsyrar vår verksamhet är gemenskap, personlig utveckling
-                    och fair-play.
+                    The purpose of the internship (LIA) is to practically apply
+                    theoretical and practical knowledge from the education and
+                    gain experience working on real projects. The internship
+                    offers a chance to be part of a professional team, work on
+                    real assignments, and understand how communication and
+                    problem-solving function in the profession and the working
+                    life of a developer.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText text='Tech' className={styles.title} el='h2' />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    The technologies i used was... Next.js: For client-side
+                    rendering and building scalable web applications. Wagmi and
+                    Viem: For integrating smart contracts and Web3
+                    functionality. Material-UI (MUI): For implementing user
+                    interfaces and components. Recharts: For creating graphs.
+                    Typescript: For typed JavaScript development. GraphQL: For
+                    fetching data.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText text='Tools' className={styles.title} el='h2' />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    The tools i used was... Slack: For communication. Email and
+                    Teams: Additional communication tools. Notion: For planning
+                    and organizing tasks and sprints. Postman: For testing API
+                    endpoints. Figma: For design implementation.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText text='Tasks' className={styles.title} el='h2' />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    Some of the tasks i did at the Gaming was... Implementing
+                    designs from Figma into functional web pages. Developing
+                    user interfaces for managing liquidity and withdrawals.
+                    Integrating backend services for data exchange. Creating and
+                    managing mock data for development purposes.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText text='Work' className={styles.title} el='h2' />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    Implementing designs from Figma into functional web pages. -
+                    Developing user interfaces for managing liquidity and
+                    withdrawals. - Integrating backend services for data
+                    exchange. - Creating and managing mock data for development
+                    purposes.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText
+                  text='Features'
+                  className={styles.title}
+                  el='h2'
+                />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    mplemented Features: Liquidity Selection and Management:
+                    Users can choose a liquidity provider and place their
+                    liquidity with the selected casino or operator. I
+                    implemented the interface and functionality to make this
+                    seamless while maintaining security and user-friendliness.
+                    Profit and Liquidity Overview: Users can view their current
+                    profit and withdraw their profit or liquidity as desired. I
+                    designed and integrated this so that users have a clear
+                    overview of their investments and current status. Currency
+                    Exchange and Network Switching: An essential part of the
+                    platform was enabling easy currency exchange between
+                    different tokens and networks, such as USDT, USD, and other
+                    relevant tokens. I implemented the necessary functionality
+                    to ensure smooth transactions and user experience.
+                    Statistics and Dynamic Data: To provide users with insights
+                    into platform activity and performance, I included features
+                    to display statistics such as Total Value Locked (TVL),
+                    trading volume, and other relevant data. This helps users
+                    make informed decisions about their investments.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText
+                  text='My Mentor'
+                  className={styles.title}
+                  el='h2'
+                />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    My mentor was Mikael Bolmstam, an experienced fullstack
+                    developer. He assigned me tasks, provided guidance, and gave
+                    feedback on my work. During the LIA period, I received
+                    support in solving technical challenges and improving my
+                    skills in frontend development and project management.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText
+                  text='Reflection'
+                  className={styles.title}
+                  el='h2'
+                />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    Reflection My goals and hopes of working with frameworks
+                    like React, Next.js, and the JavaScript programming language
+                    were fulfilled during my LIA, which was fantastic. Despite
+                    not having much experience in fullstack development, I got
+                    to work with some backend components like MongoDB and
+                    Node.js. This was a challenge that helped me grow as a
+                    developer and understand the importance of collaborating
+                    across technical boundaries. An important insight from my
+                    LIA is the need to strengthen my skills in troubleshooting
+                    and system design. Despite my knowledge and previous
+                    experience, this proved to be a key factor in handling
+                    complex projects like Liquidity House effectively. I have
+                    learned that by being methodical and following established
+                    processes, I can improve my results and the efficiency of my
+                    efforts in the future. Working with a dedicated team like
+                    DeGaming Group has also taught me the importance of
+                    effective communication and problem-solving. Through daily
+                    interactions with colleagues and mentors, I have grown as an
+                    individual contributor and as part of a larger organization.
+                    Being able to communicate effectively and understand others'
+                    perspectives has been crucial in achieving our common goals
+                    during the LIA period. My time at DeGaming has not only
+                    provided me with valuable practical experience in modern web
+                    development and integrating blockchain technology within
+                    iGaming but has also strengthened my conviction that I have
+                    chosen the right career. Having the opportunity to work with
+                    exciting technologies and real projects has been an
+                    inspiring glimpse into what the future holds in the IT
+                    industry. For my continued development as a developer, I am
+                    particularly interested in deepening my knowledge in backend
+                    and frontend development, exploring new technologies that
+                    can improve user experience and functionality of web
+                    applications. I also look forward to applying my LIA
+                    experiences in future projects and contexts and continuing
+                    to learn and grow professionally in my field.
+                  </p>
+                </SlideInLeft>
+                <AnimatedText
+                  text='Conclusion'
+                  className={styles.title}
+                  el='h2'
+                />
+                <SlideInLeft>
+                  <p className={styles.p}>
+                    Conclusion and Discussion... Comparing theoretical education
+                    with practical experience from the LIA shows that the entire
+                    IT industry is constantly evolving. There are many ways to
+                    solve problems and work as a developer, both individually
+                    and in teams, depending on personal preferences, customer
+                    orders, and specific requests. It is essential to be
+                    flexible and open to suggestions and changes, as each
+                    workplace has its methods, tools, and communication styles.
+                    A deeper understanding of how code works behind the scenes
+                    and various programming concepts can be valuable to spend
+                    more time on in education. Work methods like agile work and
+                    delivering a Minimum Viable Product (MVP) are central in
+                    many workplaces, even if their application varies.
                   </p>
                 </SlideInLeft>
               </div>
@@ -216,29 +369,22 @@ export default function Home() {
             <div className={styles.grid}>
               <Circle />
               <a
-                href='#'
+                href='https://degaming.io'
                 className={styles.card}
                 target='_blank'
                 rel='noopener noreferrer'
                 onMouseEnter={() => {
-                  setSize('unity');
+                  setSize('degaming');
                 }}
                 onMouseLeave={() => setSize('small')}
               >
                 <h2>
-                  Gemenskap <span>-&gt;</span>
+                  DeGaming <span>-&gt;</span>
                 </h2>
                 <p>
-                  E-Sport är en lagidrott. <br />
-                  Att spela fotboll eller klassik lagidrott är inte
-                  nödvändigtvis något för alla. Men hos oss får du uppleva allt
-                  det positiva med lagidrotten och gemenskapen av att spela i
-                  ett lag. <br />
-                  Vi peppar varandra och lägger stort fokus på att det ska vara
-                  kul att spela tillsammans. <br />
-                  Att e-sporta tillsammans hos oss på E-Sports Academy är ett
-                  utmärkt sätt att komma ut och träffa likasinnade och lära
-                  känna nya vänner.
+                  {' '}
+                  they`re an online platform. Pioneering a new ecnomic model for
+                  the industry.
                 </p>
               </a>
 
@@ -248,51 +394,57 @@ export default function Home() {
                 target='_blank'
                 rel='noopener noreferrer'
                 onMouseEnter={() => {
-                  setSize('evolution');
+                  setSize('mask');
                 }}
                 onMouseLeave={() => setSize('small')}
               >
                 <h2>
-                  Personlig utveckling <span>-&gt;</span>
+                  About <span>-&gt;</span>
                 </h2>
-                <p>
-                  Alla våra kurser leds av en erfaren tränare som hjälper dig
-                  att utveckla ditt spelande. <br /> Att få personlig
-                  handledning kring just ditt spelande är ett effektivt sätt att
-                  bli bättre och utvecklas som spelare.
-                  <br /> Hos oss får du handledning i såväl ditt eget spelande
-                  samt hur du på bästa sätt kan uppfylla din roll i laget och
-                  spela tillsammans med dina lagkamrater på bästa sätt. <br />
-                  Att känna att man utvecklas som spelare och att man kan bidrar
-                  till sitt lag genom att bli en bättre lagspelare är en otrolig
-                  känsla som vi vill att alla ska få uppleva.!
-                </p>
+                <p>Learn about DeGaming!</p>
               </a>
 
               <a
-                href='#'
+                href='https://gls-development.vercel.app/'
                 className={styles.card}
                 target='_blank'
                 rel='noopener noreferrer'
                 onMouseEnter={() => {
-                  setSize('fairplay');
+                  setSize('crypto');
+                  console.log('mask3');
                 }}
                 onMouseLeave={() => setSize('small')}
               >
                 <h2>
-                  Fair-play<span>-&gt;</span>
+                  GLS<span>-&gt;</span>
                 </h2>
                 <p>
-                  E-sportsscenen är en relativt ny arena som fortfarande tampas
-                  med en del problem. <br />
-                  Vi vill att alla som ägnar sig åt e-sport ska känna sig trygga
-                  och bekväma och kunna spela utan att utsättas för hot och
-                  trakasserier.
-                  <br /> Därför har vi valt att lägga stor vikt vid schyst
-                  uppträdande och ett respektfullt språkbruk. <br />
-                  Glåpord och trakasserier hör inte hemma i e-sporten! <br />
-                  Vi är alla olika, men hos oss kan du räkna med att bli
-                  behandlad med hänsyn och respekt oavsett vem du är.
+                  Explore Web3 Casino Bankroll Liquidity Provider And Seize The
+                  Opportunity To Grow Your Investments In An Exciting, Evolving
+                  Market.{' '}
+                </p>
+              </a>
+
+              <a
+                href='https://play.casin0x.io/'
+                className={styles.card}
+                target='_blank'
+                rel='noopener noreferrer'
+                onMouseEnter={() => {
+                  setSize('casinox');
+                  console.log('mask4');
+                }}
+                onMouseLeave={() => setSize('small')}
+              >
+                <h2>
+                  Deploy a Casino <span>-&gt;</span>
+                </h2>
+                <p>
+                  Instantly deploy your next Casino and start growing your own
+                  market! with our customizable SDK
+                  <br />
+                  <br />
+                  Here you can see Casin0x as an live example
                 </p>
               </a>
             </div>

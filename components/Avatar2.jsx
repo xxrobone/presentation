@@ -29,7 +29,7 @@ export const Avatar2 = ({ selectedScript, ...props }) => {
 
   // Load 3D model and animations
   const { nodes, materials } = useGLTF('/models/robtalk.glb');
-  console.log('Loaded GLTF nodes:', nodes); // Log GLTF nodes
+ /*  console.log('Loaded GLTF nodes:', nodes); // Log GLTF nodes */
   const { animations: idleAnimation } = useFBX('/animations/Idle.fbx');
   const { animations: happyAnimation } = useFBX('/animations/Happy Idle.fbx');
   const { animations: greetingAnimation } = useFBX(

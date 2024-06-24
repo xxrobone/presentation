@@ -1,14 +1,13 @@
 import SectionWrapper from '@/components/Section/SectionWrapper';
 import React from 'react';
 import SKOLAN from '@/public/skolan.jpg';
-import Fritids from '@/public/fritids.jpg';
 import Collection from '@/components/SectionCollection/Collection';
 
 const Team = () => {
   return (
     <div className='w-full'>
       <Collection>
-        <SectionWrapper title='Nattgibb' desc='Nattuggla?' image={SKOLAN}>
+        <SectionWrapper title='The Team' desc='@DeGaming' image={SKOLAN}>
           <p>
             NattGibb är ett uttryck bland spelare där man sitter uppe hela
             natten och spelar tillsammans. Vi kör inte riktigt så länge men

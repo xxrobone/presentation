@@ -47,7 +47,7 @@ const Header: React.FC = () => {
             <DropDownItem
               title='Team'
               icon={<MdOutlineGroups />}
-              url='/internship/team'
+              url='/Internship/Team'
             />
             <DropDownItem
               title='Tech'
