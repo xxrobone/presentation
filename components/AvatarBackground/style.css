@@ -1,0 +1,97 @@
+.wrapper-2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+.fancy {
+  --direction: 135deg;
+  --from: #e44141;
+  --to: #4f2af3;
+}
+
+.basic {
+  --direction: 180deg;
+  --from: #eeeeee;
+  --to: #dddddd;
+}
+
+.big,
+.fancy {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.glow {
+  height: 150px;
+  border-radius: 50%;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, #e44141, #4f2af3);
+  filter: blur(160px);
+}
+
+#bubbles {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bubble {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dashboard-border {
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e44141, #4f2af3);
+  position: absolute;
+  right: 0;
+  left: 12vw;
+  padding: 20px;
+  width: 40vw;
+  height: 60vh;
+}
+
+.dashboard {
+  position: relative;
+  border-radius: inherit;
+  border: 2px solid #231414;
+  background: #050510;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.nav-link {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e44141, #4f2af3);
+
+  > span {
+    background: #050510;
+    margin: 1px;
+    padding: 20px 40px;
+    font-size: 2rem;
+    display: inline-block;
+    border-radius: inherit;
+    color: white;
+  }
+}
