@@ -12,7 +12,7 @@
 } */
 
 .secondary-cursor {
-    z-index: 1000;
+    z-index: 10000;
     border-radius: 50%;
     pointer-events: none;
     overflow: hidden;
@@ -43,22 +43,22 @@
             mix-blend-mode: darken;
     }
 
-    &.unity {
+    &.degaming {
         width: 220px;
         height: 220px;
         border-radius: 10px;
-        background-image: url('/unity.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center center;
-        
+            mask-image: url('/degaming.svg');
+            mask-repeat: no-repeat;
+            mask-size: 220px;
+            background: var(--primary);
+            color: black;
     }
 
-    &.evolution {
-      width: 220px;
-        height: 220px;
+    &.casinox {
+      width: 120px;
+      height: 46px;
       border-radius: 0px;
-      background-image: url('/evolution.jpg');
+      background-image: url('/casin0x_logo.png');
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center center;
@@ -98,16 +98,26 @@
         background: #000000;
       }
 
-      &.fairplay {
-        width: 220px;
-        height: 220px;
-        background-image: url('/fairplay.jpg');
+      &.crypto {
+        width: 120px;
+        height: 120px;
+        background-image: url('/xdc.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center center;
        
       }
 
+      &.crypto2 {
+        width: 120px;
+        height: 120px;
+        background-image: url('/mUSDT.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        object-fit: cover;
+        
+      }
 
     &.xlarge {
         width: 220px;

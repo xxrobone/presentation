@@ -1,10 +1,10 @@
 'use client'
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useContext } from 'react';
 import NavBtn from './NavBtn';
 
 // styles
 import styles from './Navbar.module.scss';
-import styled from './NavBtn.module.scss';
+import { CursorContext } from '@/components/Cursor/CursorProvider';
 
 interface NavProps {
   children: React.ReactNode;
@@ -14,6 +14,8 @@ const Nav: React.FC<NavProps> = (props) => {
   const [click, setClick] = useState<boolean>(false);
   const [navActive, setNavActive] = useState<boolean>(false);
   const navRef = useRef<HTMLDivElement>(null);
+
+  const { setSize } = useContext(CursorContext);
 
   const handleClick = () => {
     setClick(!click);
@@ -45,7 +47,12 @@ const Nav: React.FC<NavProps> = (props) => {
   }, []);
 
   return (
-    <nav className={styles.navbar} ref={navRef}>
+    <nav className={styles.navbar} ref={navRef}
+    onMouseEnter={() => {
+      setSize('large');
+    }}
+    onMouseLeave={() => setSize('small')}
+    >
       <button className={styles.menu_icon} onClick={handleClick}>
         <NavBtn navActive={navActive} handleClick={handleClick} />
       </button>

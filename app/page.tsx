@@ -51,7 +51,9 @@ const data = [
   },
 ];
 
-export default function Home() {
+interface MainProps {}
+
+const Home: React.FC<MainProps> = (props) => {
   const [showMoney, setShowMoney] = useState(false);
   const [showLoadingSection, setShowLoadingSection] = useState(true);
   const { setSize } = useContext(CursorContext);
@@ -117,9 +119,16 @@ export default function Home() {
                 the CEO and Co-Founder of DeGaming - BOSS MAN!
                 <br />
               </p>
-              <Button theme='outlined'>
-                <a href='/internship/team'>The team</a>
-              </Button>
+              <div
+                onMouseEnter={() => {
+                  setSize('large');
+                }}
+                onMouseLeave={() => setSize('small')}
+              >
+                <Button theme='outlined'>
+                  <a href='/presentation#team'>The team</a>
+                </Button>
+              </div>
             </div>
             <div
               className={styles.center}
@@ -373,19 +382,19 @@ export default function Home() {
               </a>
 
               <a
-                href='#'
+                href='/project'
                 className={styles.card}
-                target='_blank'
-                rel='noopener noreferrer'
                 onMouseEnter={() => {
                   setSize('mask');
                 }}
                 onMouseLeave={() => setSize('small')}
               >
                 <h2>
-                  About <span>-&gt;</span>
+                  About projects <span>-&gt;</span>
                 </h2>
-                <p>Learn about DeGaming!</p>
+                <p>
+                  The projects i worked on! During my internship at the gaming
+                </p>
               </a>
 
               <a
@@ -480,4 +489,6 @@ export default function Home() {
       </>
     </main>
   );
-}
+};
+
+export default Home;

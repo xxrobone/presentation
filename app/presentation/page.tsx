@@ -8,8 +8,12 @@ const Presentation = () => {
   return (
     <div>
       <SectionCollection />
+      <section className='section'>
       <AnimatedText text='Tech Team' className='text-3xl font-black' />
+      </section>
+      <div id='team'>
       <PreviewWrapper />
+      </div>
     </div>
   );
 };
