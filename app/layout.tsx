@@ -32,6 +32,8 @@ export default function RootLayout({
     const isAuthenticated = localStorage.getItem('authenticated');
     if (isAuthenticated === 'true') {
       setAuthenticated(true);
+    } else {
+      setAuthenticated(false);
     }
   }, []);
 
