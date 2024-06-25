@@ -436,7 +436,7 @@ export default function Home() {
           <section className={styles.section} id='presentation'>
             <AnimatedText
               text='Presentation threejs'
-              className={styles.title}
+              className={styles.title4}
             />
             <Presentation3d />
           </section>
