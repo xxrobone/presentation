@@ -13,26 +13,27 @@ const Topbar: React.FC<TopMenuProps> = () => {
   const { setSize } = useContext(CursorContext);
   return (
     <div className={styles.top_menu}>
-      <p
+      <a
+        href='/'
         onMouseEnter={() => {
           setSize('large');
         }}
         onMouseLeave={() => setSize('small')}
       >
         LIA Presentation
-      </p>
+      </a>
       <div
         onMouseEnter={() => {
           setSize('large');
         }}
         onMouseLeave={() => setSize('small')}
       >
-        <a href='/' target='_blank' rel='noopener noreferrer'>
-         <h2 className={styles.sub}>Robert Wägar FEA22STO</h2>
+        <a href='/'>
+          <h2 className={styles.sub}>Robert Wägar FEA22STO</h2>
         </a>
       </div>
       <button>
-        <a href='/kontakt'>Kontakt</a>
+        <a href='/contact'>Contact</a>
       </button>
     </div>
   );

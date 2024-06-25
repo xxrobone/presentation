@@ -5,10 +5,9 @@ import CustomCursor from '@/components/Cursor';
 import CursorProvider from '@/components/Cursor/CursorProvider';
 import Socials from '@/components/socials';
 import { Inter, Space_Grotesk } from 'next/font/google';
-import Footer from '@/app/_component/Footer';
+import Footer from '@/components/Footer';
 import Header from '@/components/Navigation/Header';
 import Splash from '@/components/Splash/Splash';
-import { useRouter } from 'next/navigation';
 
 const inter = Inter({
   weight: ['300', '400', '500', '700'],
@@ -28,15 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [authenticated, setAuthenticated] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     const isAuthenticated = localStorage.getItem('authenticated');
     if (isAuthenticated === 'true') {
       setAuthenticated(true);
-      router.push('/');
     }
-  }, [router]);
+  }, []);
 
   return (
     <html lang='en'>

@@ -30,44 +30,23 @@ const Header: React.FC = () => {
         <NavItem
           title='About me'
           icon={<MdOutlineAnnouncement />}
-          url='/om-oss'
+          url='/about'
         />
-        <NavItem title='Internship' icon={<MdOutlineHistoryEdu />} url=''>
+        <NavItem
+          title='Internship'
+          icon={<MdOutlineHistoryEdu />}
+          url='/internship/presentation'
+        >
           <DropDown>
             <DropDownItem
-              title='Summary'
+              title='Presentation'
               icon={<SiMusicbrainz />}
-              url='/internship/summary'
+              url='/internship/presentation'
             />
             <DropDownItem
-              title='Daily Overview'
+              title='Extra'
               icon={<GiPeaceDove />}
-              url='/internship/daily-overview'
-            />
-            <DropDownItem
-              title='Team'
-              icon={<MdOutlineGroups />}
-              url='/Internship/Team'
-            />
-            <DropDownItem
-              title='Tech'
-              icon={<MdOutlineGroups />}
-              url='/internship/tech'
-            />
-            <DropDownItem
-              title='Tools'
-              icon={<MdOutlineGroups />}
-              url='/internship/tools'
-            />
-            <DropDownItem
-              title='Features'
-              icon={<MdOutlineGroups />}
-              url='/internship/features'
-            />
-            <DropDownItem
-              title='reflection'
-              icon={<MdOutlineGroups />}
-              url='/internship/reflection'
+              url='/internship/extra'
             />
           </DropDown>
         </NavItem>

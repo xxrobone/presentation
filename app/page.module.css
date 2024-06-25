@@ -44,6 +44,11 @@
   font-family: var(--font-space_grotesk);
   font-size: clamp(3rem, 0.75rem + 7vw, 6rem);
 }
+.title4 {
+  width: 100%;
+  font-family: var(--font-space_grotesk);
+  font-size: clamp(1.5rem, 0.5rem + 3vw, 2.5rem);
+}
 
 .sub {
   font-family: var(--font-inter);

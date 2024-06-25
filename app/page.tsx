@@ -21,32 +21,32 @@ import Button from '@/components/Button';
 import styles from './page.module.css';
 
 const data = [
-  { image: '/fortnite.jpg', title: 'Fortnite', description: 'Description 1' },
-  { image: '/overwatch.jpg', title: 'Overwatch', description: 'Description 2' },
-  { image: '/valorant.jpg', title: 'Valorant', description: 'Description 3' },
+  { image: '/chillroom.jpg', title: 'Title', description: 'Description 1' },
+  { image: '/chillroom.jpg', title: 'Title', description: 'Description 2' },
+  { image: '/chillroom.jpg', title: 'Title', description: 'Description 3' },
   {
-    image: '/rocket-league.jpg',
-    title: 'Rocket League',
+    image: '/chillroom.jpg',
+    title: 'Title',
     description: 'Description 4',
   },
   {
-    image: '/counter-strike-2.jpg',
-    title: 'Counter Strike 2',
+    image: '/chillroom.jpg',
+    title: 'Title',
     description: 'Description 4',
   },
   {
-    image: '/cod-warzone.jpg',
-    title: 'Call of duty: Warzone',
+    image: '/chillroom.jpg',
+    title: 'Title',
     description: 'Description 4',
   },
   {
-    image: '/league-of-legends.jpg',
-    title: 'League of Legends',
+    image: '/chillroom.jpg',
+    title: 'Title',
     description: 'Description 4',
   },
   {
-    image: '/heartstone.jpg',
-    title: 'Heartstone',
+    image: '/chillroom.jpg',
+    title: 'Title',
     description: 'Description 4',
   },
 ];
@@ -91,16 +91,6 @@ export default function Home() {
                 </span>
                 , who is a fullstack developer, Lead developer at DeGaming{' '}
                 <br />
-                <span style={{ color: 'aqua', fontWeight: 700 }}>
-                  Richard Larsson
-                </span>{' '}
-                is the CTO - And Co-founder at the Gaming - Boss man.
-                <br />
-                And{' '}
-                <span style={{ color: 'aqua', fontWeight: 700 }}>
-                  Emil Ahmad
-                </span>{' '}
-                is the CEO and Co-Founder BIG BOSS MAN!
                 <br />
                 <span
                   style={{
@@ -114,6 +104,18 @@ export default function Home() {
                   What can I say? these people made my time awesome at DeGaming!
                   🙏
                 </span>
+                <br />
+                <br />
+                Thank you{' '}
+                <span style={{ color: 'aqua', fontWeight: 700 }}>
+                  Richard Larsson
+                </span>{' '}
+                the CTO - And Co-founder at DeGaming - BOSS! &{' '}
+                <span style={{ color: 'aqua', fontWeight: 700 }}>
+                  Emil Ahmad
+                </span>{' '}
+                the CEO and Co-Founder of DeGaming - BOSS MAN!
+                <br />
               </p>
               <Button theme='outlined'>
                 <a href='/internship/team'>The team</a>
@@ -159,14 +161,15 @@ export default function Home() {
                       display: 'flex',
                       alignItems: 'center',
                       color: 'var(--primary)',
+                      gap: '12px',
                     }}
                   >
                     <span style={{ color: 'white' }}>
                       <TfiArrowCircleRight />
                     </span>
-                    &nbsp; Creating Web3 Casino Bankroll Liquidity Provider And
-                    Seizing The Opportunity To Grow Ordinary peoples Investments
-                    In An Exciting, Evolving Market.
+                    &nbsp; Creating Web3 Casino Bankroll Liquidity Provider
+                    <br /> &nbsp; Seizing The Opportunity To Grow Investments In
+                    An Exciting, Evolving Market.
                   </p>
                 </SlideInLeft>
                 <SlideInLeft>
@@ -182,16 +185,12 @@ export default function Home() {
                       <TfiArrowCircleRight />
                     </span>
                     &nbsp; Degaming makes it possible to instantly deploy a
-                    Casino and start growing your own market! with their
-                    customizable SDK
+                    Casino and start growing your own market!
+                    <br /> &nbsp; with their customizable SDK
                   </p>
                 </SlideInLeft>
                 <br />
-                <AnimatedText
-                  text='Welcome! ...'
-                  className={styles.title}
-                  el='h2'
-                />
+                <AnimatedText text='Welcome!' className={styles.title} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     ...to my internship presentation at DeGaming Group. Here,
@@ -201,7 +200,7 @@ export default function Home() {
                     received, and the valuable lessons I learned. Enjoy!
                   </p>
                 </SlideInLeft>
-                <AnimatedText text='Purpose' className={styles.title} el='h2' />
+                <AnimatedText text='Purpose' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     The purpose of the internship (LIA) is to practically apply
@@ -213,7 +212,7 @@ export default function Home() {
                     life of a developer.
                   </p>
                 </SlideInLeft>
-                <AnimatedText text='Tech' className={styles.title} el='h2' />
+                <AnimatedText text='Tech' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     The technologies i used was... Next.js: For client-side
@@ -225,7 +224,7 @@ export default function Home() {
                     fetching data.
                   </p>
                 </SlideInLeft>
-                <AnimatedText text='Tools' className={styles.title} el='h2' />
+                <AnimatedText text='Tools' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     The tools i used was... Slack: For communication. Email and
@@ -234,7 +233,7 @@ export default function Home() {
                     endpoints. Figma: For design implementation.
                   </p>
                 </SlideInLeft>
-                <AnimatedText text='Tasks' className={styles.title} el='h2' />
+                <AnimatedText text='Tasks' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     Some of the tasks i did at the Gaming was... Implementing
@@ -244,7 +243,7 @@ export default function Home() {
                     managing mock data for development purposes.
                   </p>
                 </SlideInLeft>
-                <AnimatedText text='Work' className={styles.title} el='h2' />
+                <AnimatedText text='Work' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     Implementing designs from Figma into functional web pages. -
@@ -254,11 +253,7 @@ export default function Home() {
                     purposes.
                   </p>
                 </SlideInLeft>
-                <AnimatedText
-                  text='Features'
-                  className={styles.title}
-                  el='h2'
-                />
+                <AnimatedText text='Features' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     mplemented Features: Liquidity Selection and Management:
@@ -282,11 +277,7 @@ export default function Home() {
                     make informed decisions about their investments.
                   </p>
                 </SlideInLeft>
-                <AnimatedText
-                  text='My Mentor'
-                  className={styles.title}
-                  el='h2'
-                />
+                <AnimatedText text='My Mentor' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
                     My mentor was Mikael Bolmstam, an experienced fullstack
@@ -296,70 +287,63 @@ export default function Home() {
                     skills in frontend development and project management.
                   </p>
                 </SlideInLeft>
-                <AnimatedText
-                  text='Reflection'
-                  className={styles.title}
-                  el='h2'
-                />
+                <AnimatedText text='Reflection' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
-                    Reflection My goals and hopes of working with frameworks
-                    like React, Next.js, and the JavaScript programming language
-                    were fulfilled during my LIA, which was fantastic. Despite
-                    not having much experience in fullstack development, I got
-                    to work with some backend components like MongoDB and
-                    Node.js. This was a challenge that helped me grow as a
-                    developer and understand the importance of collaborating
-                    across technical boundaries. An important insight from my
-                    LIA is the need to strengthen my skills in troubleshooting
-                    and system design. Despite my knowledge and previous
-                    experience, this proved to be a key factor in handling
-                    complex projects like Liquidity House effectively. I have
-                    learned that by being methodical and following established
-                    processes, I can improve my results and the efficiency of my
-                    efforts in the future. Working with a dedicated team like
-                    DeGaming Group has also taught me the importance of
-                    effective communication and problem-solving. Through daily
-                    interactions with colleagues and mentors, I have grown as an
-                    individual contributor and as part of a larger organization.
-                    Being able to communicate effectively and understand others&apos;
-                    perspectives has been crucial in achieving our common goals
-                    during the LIA period. My time at DeGaming has not only
-                    provided me with valuable practical experience in modern web
-                    development and integrating blockchain technology within
-                    iGaming but has also strengthened my conviction that I have
-                    chosen the right career. Having the opportunity to work with
-                    exciting technologies and real projects has been an
-                    inspiring glimpse into what the future holds in the IT
-                    industry. For my continued development as a developer, I am
-                    particularly interested in deepening my knowledge in backend
-                    and frontend development, exploring new technologies that
-                    can improve user experience and functionality of web
-                    applications. I also look forward to applying my LIA
-                    experiences in future projects and contexts and continuing
-                    to learn and grow professionally in my field.
+                    My goals and hopes of working with frameworks like React,
+                    Next.js, and the JavaScript programming language were
+                    fulfilled during my LIA, which was fantastic. Despite not
+                    having much experience in fullstack development, I got to
+                    work with some backend components like MongoDB and Node.js.
+                    This was a challenge that helped me grow as a developer and
+                    understand the importance of collaborating across technical
+                    boundaries. An important insight from my LIA is the need to
+                    strengthen my skills in troubleshooting and system design.
+                    Despite my knowledge and previous experience, this proved to
+                    be a key factor in handling complex projects like Liquidity
+                    House effectively. I have learned that by being methodical
+                    and following established processes, I can improve my
+                    results and the efficiency of my efforts in the future.
+                    Working with a dedicated team like DeGaming Group has also
+                    taught me the importance of effective communication and
+                    problem-solving. Through daily interactions with colleagues
+                    and mentors, I have grown as an individual contributor and
+                    as part of a larger organization. Being able to communicate
+                    effectively and understand others&apos; perspectives has
+                    been crucial in achieving our common goals during the LIA
+                    period. My time at DeGaming has not only provided me with
+                    valuable practical experience in modern web development and
+                    integrating blockchain technology within iGaming but has
+                    also strengthened my conviction that I have chosen the right
+                    career. Having the opportunity to work with exciting
+                    technologies and real projects has been an inspiring glimpse
+                    into what the future holds in the IT industry. For my
+                    continued development as a developer, I am particularly
+                    interested in deepening my knowledge in backend and frontend
+                    development, exploring new technologies that can improve
+                    user experience and functionality of web applications. I
+                    also look forward to applying my LIA experiences in future
+                    projects and contexts and continuing to learn and grow
+                    professionally in my field.
                   </p>
                 </SlideInLeft>
-                <AnimatedText
-                  text='Conclusion'
-                  className={styles.title}
-                  el='h2'
-                />
+                <AnimatedText text='Conclusion' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
-                    Conclusion and Discussion... Comparing theoretical education
-                    with practical experience from the LIA shows that the entire
-                    IT industry is constantly evolving. There are many ways to
-                    solve problems and work as a developer, both individually
-                    and in teams, depending on personal preferences, customer
-                    orders, and specific requests. It is essential to be
-                    flexible and open to suggestions and changes, as each
-                    workplace has its methods, tools, and communication styles.
-                    A deeper understanding of how code works behind the scenes
-                    and various programming concepts can be valuable to spend
-                    more time on in education. Work methods like agile work and
-                    delivering a Minimum Viable Product (MVP) are central in
-                    many workplaces, even if their application varies.
+                    Conclusion and Discussion... <br />
+                    Comparing theoretical education with practical experience
+                    from the LIA shows that the entire IT industry is constantly
+                    evolving. There are many ways to solve problems and work as
+                    a developer, both individually and in teams, depending on
+                    personal preferences, customer orders, and specific
+                    requests. It is essential to be flexible and open to
+                    suggestions and changes, as each workplace has its methods,
+                    tools, and communication styles. A deeper understanding of
+                    how code works behind the scenes and various programming
+                    concepts can be valuable to spend more time on in education.
+                    Work methods like agile work and delivering a Minimum Viable
+                    Product (MVP) are central in many workplaces, even if their
+                    application varies.
                   </p>
                 </SlideInLeft>
               </div>
@@ -453,57 +437,28 @@ export default function Home() {
             <AnimatedText
               text='Presentation threejs'
               className={styles.title}
-              el='h2'
             />
             <Presentation3d />
           </section>
           <section className={styles.section}>
-            <AnimatedText
-              text='VÅRA AKTIVITETER'
-              className={styles.title}
-              el='h2'
-            />
+            <AnimatedText text='Thank you' className={styles.title} />
             <SlideInLeft>
               <p style={{ textAlign: 'left', marginBottom: '2rem' }}>
-                E-Sports Academy är en samlingsplats för barn och unga som
-                brinner för E-Sport. <br />
-                Hos oss kan du gå tränarledda e-sportkurser i en rad olika spel.
-                <br /> Kurserna sträcker sig över en termin där höstterminen
-                startar i augusti och vårterminen drar igång i januari. Vi
-                erbjuder olika kurser för olika nivåer och åldrar.
-                <br /> <br />
-                För dig som inte har möjlighet att vara med på plats i våra
-                lokaler utanför Stockholm erbjuder vi även E-Sport Onlinekurser
-                på distans. <br /> <br /> Under skolloven ordnar vi dagläger
-                under vardagar mellan klockan 9 och 16. Vi e-sportar tillsammans
-                och blandar upp det med andra roliga aktiviteter så som
-                Kahoot-quiz och Fall guys turneringar. Man väljer själv vad man
-                vill spela och tränare finns på plats under dagen och hjälper
-                till med inloggningar och ger tips och tricks och stöttning
-                under spelandet.
-                <br /> <br /> Med jämna mellanrum arrangerar vi även NattGibb på
-                helgkvällar mellan klockan 18 och 22. En coach finns alltid på
-                plats under hela passet och ser till så att alla har det bra.
-                Det är fritt fram att spela vad man vill under NattGibben.{' '}
-                <br /> För skolor som vill erbjuda E-Sport på schemat erbjuder
-                vi även helhetslösningar där vi tillhandahåller lokal,
-                utrustning och tränare.
+                I wanna give a huge thanks to the CME staff and teachers
                 <br />
-                <br /> Sedan höstterminen 2023 samarbetar vi med Gustavsbergs
-                Gymnasium som erbjuder e-sport i form av kurserna Specialidrott
-                1 och 2 som sträcker sig över totalt sex terminer. Läs mer om
-                våra aktiviteter här:
+                once again thank you DeGaming Group for the time and giving me
+                the change to work with such an awesome team
+                <br />
               </p>
             </SlideInLeft>
           </section>
         </div>
 
-        <section className={styles.center}>
+        <section className='w-full py-40 px-20'>
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <AnimatedText
-              text=' VI SPELAR FÖLJANDE SPEL'
-              className={styles.title}
-              el='h2'
+              text='Maybe adding some extra'
+              className={styles.title4}
             />
           </div>
 

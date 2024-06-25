@@ -4,7 +4,6 @@ import styles from './AnimatedText.module.scss';
 
 type AnimatedTextProps = {
   text: string;
-  el?: keyof JSX.IntrinsicElements;
   className?: string;
   once?: boolean;
 };
@@ -17,7 +16,6 @@ const animation = {
 // adding wrapper as a way to be able to add any element for text p - h1 etc
 export const AnimatedText = ({
   text,
-  el: Wrapper = 'p',
   className,
   once,
 }: AnimatedTextProps) => {
@@ -32,7 +30,7 @@ export const AnimatedText = ({
     return chars;
   };
   return (
-    <Wrapper className={className}>
+    <div className={className}>
       <span className={styles['sr-only']}>{text}</span>
       <motion.span
         ref={ref}
@@ -47,6 +45,6 @@ export const AnimatedText = ({
           </motion.span>
         ))}
       </motion.span>
-    </Wrapper>
+    </div>
   );
 };

@@ -40,7 +40,7 @@ const Hero = ({ image, title, desc, tag }: SectionProps) => {
       </motion.div>
       <div className='grid place-content-center gap-4 md:p-40 px-8 py-80'>
         <span className='uppercase text-xs'>{tag}</span>
-        <AnimatedText text={title.toUpperCase()} el='h1' className='title2' />
+        <AnimatedText text={title.toUpperCase()} className='title2' />
         <p className='font-primary max-w-[700px] text-xl md:text-2xl'>{desc}</p>
         <div className='flex row gap-10'>
           <Button theme='outlined'>
