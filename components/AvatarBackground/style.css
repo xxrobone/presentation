@@ -83,3 +83,16 @@
     color: white;
   }
 }
+
+@media (max-width: 700px) {
+
+  .dashboard-border {
+    position: relative;
+    border-radius: 14px;
+    left: 12vw;
+    padding: 16px;
+    width: 90svw;
+    height: 80svh;
+  }
+     
+}

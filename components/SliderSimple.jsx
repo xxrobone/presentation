@@ -79,7 +79,7 @@ const Card = ({
 
 /* export default Card; */
 
-const Slider = () => {
+const SliderSimple = () => {
   const [width, setWidth] = useState(0);
   const slider_ref = useRef();
 
@@ -106,4 +106,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default SliderSimple;

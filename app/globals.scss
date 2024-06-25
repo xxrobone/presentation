@@ -107,6 +107,15 @@ p {
   width: inherit;
 }
 
+@media (max-width: 700px) {
+
+  p {
+    display: inline-block;
+    max-width: 80vw;
+    width: inherit;
+  }
+}
+
 .bg {
   position: absolute;
   inset: 0;
@@ -193,12 +202,12 @@ a {
   text-align: center;
   width: 100%;
   font-family: var(--font-space_grotesk);
-  font-size: clamp(3rem, 0.75rem + 5vw, 6rem);
+  font-size: clamp(2rem, 0.75rem + 3vw, 6rem);
 }
 
 .title2 {
   font-family: var(--font-space_grotesk);
-  font-size: clamp(2.5rem, 0.75rem + 5vw, 5rem);
+  font-size: clamp(2rem, 0.75rem + 3vw, 4rem);
 }
 
 
@@ -246,6 +255,5 @@ a {
 }
 
 canvas {
-  position: absolute;
   pointer-events: none;
 }

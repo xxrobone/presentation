@@ -8,10 +8,10 @@ const Presentation = () => {
   return (
     <div>
       <SectionCollection />
-      <section className='section'>
-      <AnimatedText text='Tech Team' className='text-3xl font-black' />
+      <section className='center'>
+      <AnimatedText text='Tech Team + Boss' className='md:text-7xl text-4xl font-black md:pl-40 pt-20' />
       </section>
-      <div id='team'>
+      <div id='team' className='relative'>
       <PreviewWrapper />
       </div>
     </div>

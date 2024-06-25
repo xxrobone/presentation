@@ -7,7 +7,7 @@
   z-index: 999;
   display: block;
   font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.125);
+  background: rgba(0, 0, 0, 0.125);
   overflow-x: hidden;
   transition: all 0.4s linear;
 }
@@ -23,7 +23,7 @@
 
 .bgorange {
   transition: 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.325);
+  background: rgba(0, 0, 0, 0.325);
 }
 
 .nav_menu {
@@ -217,7 +217,7 @@ a .mobile {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: $color-bg;
+    background: linear-gradient(135deg, #e44141, #4f2af3);
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 100;
@@ -240,7 +240,11 @@ a .mobile {
 }
 
 @media screen and (max-width: 768px) {
+  .menu_icon {
+    background: linear-gradient(135deg, #e44141, #4f2af3);
+  }
   .nav_menu {
+    background: linear-gradient(135deg, #e44141, #4f2af3);
     .nav_item {
       left: 10vw;
 

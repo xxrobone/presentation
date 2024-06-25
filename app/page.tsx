@@ -124,6 +124,7 @@ const Home: React.FC<MainProps> = (props) => {
                   setSize('large');
                 }}
                 onMouseLeave={() => setSize('small')}
+                className='pointer-events-auto cursor-pointer'
               >
                 <Button theme='outlined'>
                   <a href='/presentation#team'>The team</a>
@@ -390,10 +391,10 @@ const Home: React.FC<MainProps> = (props) => {
                 onMouseLeave={() => setSize('small')}
               >
                 <h2>
-                  About projects <span>-&gt;</span>
+                  My main project <span>-&gt;</span>
                 </h2>
                 <p>
-                  The projects i worked on! During my internship at the gaming
+                  The project Liquidity House i worked on during my internships final stage at the gaming
                 </p>
               </a>
 
@@ -482,10 +483,6 @@ const Home: React.FC<MainProps> = (props) => {
             ))}
           </Grid>
         </section>
-        {/*  <section className={styles.section}>
-          <PreviewWrapper />
-        </section>  */}
-        {/*  <SectionCollection /> */}
       </>
     </main>
   );

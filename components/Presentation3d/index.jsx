@@ -70,7 +70,6 @@ function Presentation3d() {
   return (
     <>
       <AvatarBackground selectedScript={selectedScript} className='pres' />
-      {/* Section for the tag buttons */}
 
       <p className='text'>Avatar Voice</p>
       <FcSettings className='settings' onClick={toggleVisibility} />
@@ -88,16 +87,6 @@ function Presentation3d() {
         <button onClick={() => handleTagClick('reflection')}>Reflection</button>
         <button onClick={() => handleTagClick('conclusion')}>Conclusion</button>
       </div>
-
-      {/* <section className='robTalk'>
-          <Canvas
-            shadows
-            camera={{ position: [0, 0, 8], fov: 45 }}
-            ref={canvasRef}
-          >
-            <Experience2 selectedScript={selectedScript} />
-          </Canvas>
-        </section> */}
     </>
   );
 }
