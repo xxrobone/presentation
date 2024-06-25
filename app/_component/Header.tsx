@@ -31,12 +31,9 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className='hidden md:block'>
-          <button
-           
-            className='bg-[#ff6e40] hover:bg-orange-600 transition-colors duration-300'
-          >
-            <Link href='/contact'>Kontakt</Link>
+        <div className='md:block'>
+          <button>
+            <Link href='/contact'>Contact</Link>
           </button>
         </div>
       </div>

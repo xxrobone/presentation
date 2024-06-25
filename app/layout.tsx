@@ -7,6 +7,8 @@ import Socials from '@/components/socials';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import Footer from '@/app/_component/Footer';
 import Header from '@/components/Navigation/Header';
+import Splash from '@/components/Splash/Splash';
+import { useRouter } from 'next/navigation';
 
 const inter = Inter({
   weight: ['300', '400', '500', '700'],
@@ -26,28 +28,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [authenticated, setAuthenticated] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const isAuthenticated = localStorage.getItem('authenticated');
     if (isAuthenticated === 'true') {
       setAuthenticated(true);
+      router.push('/');
     }
-  }, []);
-
-  if (!authenticated) {
-    return <Splash />;
-  }
+  }, [router]);
 
   return (
     <html lang='en'>
       <body className={`${inter.className} ${space_grotesk.className}`}>
         <CursorProvider>
           <CustomCursor />
-          <Header />
-          <Socials />
-          {children}
+          {!authenticated ? (
+            <Splash />
+          ) : (
+            <>
+              <Header />
+              <Socials />
+              {children}
+              <Footer />
+            </>
+          )}
         </CursorProvider>
-        <Footer />
       </body>
     </html>
   );

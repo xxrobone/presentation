@@ -4,14 +4,14 @@ import AnimatedCraze from '@/components/AnimationCraze';
 import TheDrop from '@/components/AnimationCraze/TheDrop';
 import WaterDrop from '@/components/WaterDrop';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation'
 
 const Splash = () => {
   const [showLoadingSection, setShowLoadingSection] = useState(true);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const router = useRouter();
 
+const router = useRouter()
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoadingSection(false);
@@ -25,7 +25,8 @@ const Splash = () => {
 
   const handleEnterClick = () => {
     if (password === process.env.NEXT_PUBLIC_APP_PASSWORD) {
-      router.push('/'); // Change '/home' to the desired route
+        router.push('/'); // Change '/home' to the desired route
+        localStorage.setItem('authenticated', 'true');
     } else {
       setError('Incorrect password. Please try again.');
     }

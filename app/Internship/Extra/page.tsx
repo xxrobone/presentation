@@ -1,15 +1,13 @@
 import SectionWrapper from '@/components/Section/SectionWrapper';
 import React from 'react';
 import SKOLAN from '@/public/skolan.jpg';
-import Fritids from '@/public/fritids.jpg';
 import Collection from '@/components/SectionCollection/Collection';
 
-
-const Reflection = () => {
+const Extra = () => {
   return (
     <div className='w-full'>
       <Collection>
-        <SectionWrapper title='Reflection' desc='My thoughts?' image={SKOLAN}>
+        <SectionWrapper title='The Team' desc='@DeGaming' image={SKOLAN}>
           <p>
             NattGibb är ett uttryck bland spelare där man sitter uppe hela
             natten och spelar tillsammans. Vi kör inte riktigt så länge men
@@ -42,10 +40,10 @@ const Reflection = () => {
             terminskurser får du rabatt och betalar endast 200 kr för NattGibb.
           </p>
         </SectionWrapper>
-       
+     
       </Collection>
     </div>
   );
 };
 
-export default Reflection;
+export default Extra;

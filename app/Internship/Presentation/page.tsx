@@ -4,7 +4,7 @@ import React from 'react';
 import styles from '../../page.module.css';
 import { AnimatedText } from '@/components/animations/AnimatedText';
 
-const DailyOverview = () => {
+const Presentation = () => {
   return (
     <div className='w-2/3 min-h-full flex flex-col relative md:ml-40 md:mr-40 text-left'>
       <AnimatedText text='Daily Overview' className={styles.title} el='h2' />
@@ -85,4 +85,4 @@ const DailyOverview = () => {
   );
 };
 
-export default DailyOverview;
+export default Presentation;
