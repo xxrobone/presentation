@@ -7,7 +7,6 @@ import Socials from '@/components/socials';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import Footer from '@/app/_component/Footer';
 import Header from '@/components/Navigation/Header';
-import Landing from'@/components/bajs/Landingg
 
 const inter = Inter({
   weight: ['300', '400', '500', '700'],
@@ -36,7 +35,7 @@ export default function RootLayout({
   }, []);
 
   if (!authenticated) {
-    return <Landing />;
+    return <Splash />;
   }
 
   return (
