@@ -322,7 +322,7 @@ export default function Home() {
                     effective communication and problem-solving. Through daily
                     interactions with colleagues and mentors, I have grown as an
                     individual contributor and as part of a larger organization.
-                    Being able to communicate effectively and understand others'
+                    Being able to communicate effectively and understand others&apos;
                     perspectives has been crucial in achieving our common goals
                     during the LIA period. My time at DeGaming has not only
                     provided me with valuable practical experience in modern web
