@@ -64,7 +64,7 @@ const Splash = () => {
             className='border px-4 py-2 border-r-2 rounded hover:bg-white hover:text-black transition-all duration-300'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 5, duration: 1 }}
+            transition={{ delay: 2, duration: 1 }}
             onClick={handleEnterClick}
           >
             <h2>Enter</h2>
@@ -74,7 +74,7 @@ const Splash = () => {
               className='text-red-500 mt-4'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0, duration: 1 }}
+              transition={{ delay: 2, duration: 1 }}
             >
               {error}
             </motion.p>
