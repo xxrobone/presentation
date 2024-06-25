@@ -9,16 +9,14 @@ interface ItemProps {
     tags: string;
     desc: string;
   };
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
+  onClick: () => void;
 }
 
-const Item: React.FC<ItemProps> = ({ preview, onMouseEnter, onMouseLeave }) => {
+const Item: React.FC<ItemProps> = ({ preview, onClick }) => {
   return (
     <div
       className='item'
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      onClick={onClick}     
     >
       <p>{preview.title}</p>
     </div>

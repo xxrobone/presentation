@@ -24,7 +24,7 @@ const Preview: React.FC<PreviewProps> = ({
   const previewRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log('isActive:', isActive); // Add this line to check the value of isActive
+    console.log('isActive:', isActive, activeIndex, variant); // Add this line to check the value of isActive
     if (isActive && previewRef.current) {
       const elementsToAnimate = ['title', 'tags', 'desc'];
       elementsToAnimate.forEach((el) => {
@@ -53,7 +53,7 @@ const Preview: React.FC<PreviewProps> = ({
         });
       }
     }
-  }, [isActive]);
+  }, [isActive, activeIndex]);
 
   return (
     <div
@@ -62,7 +62,7 @@ const Preview: React.FC<PreviewProps> = ({
     >
       <div className='preview-img'>
         <img
-          src={`/assets/${activeIndex}.jpg`}
+          src={preview.img}
           alt={preview.title}
           className='img'
         />
