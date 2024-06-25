@@ -58,7 +58,7 @@ const Splash = () => {
             placeholder='Enter Password'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 5, duration: 1 }}
+            transition={{ delay: 1, duration: 1 }}
           />
           <motion.button
             className='border px-4 py-2 border-r-2 rounded hover:bg-white hover:text-black transition-all duration-300'
