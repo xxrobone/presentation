@@ -11,7 +11,7 @@ const Presentation = () => {
       <section className='center'>
       <AnimatedText text='Tech Team + Boss' className='md:text-7xl text-4xl font-black md:pl-40 pt-20' />
       </section>
-      <div id='team' className='relative'>
+      <div id='team' className='relative h-full'>
       <PreviewWrapper />
       </div>
     </div>
