@@ -22,7 +22,8 @@ const Splash = () => {
   };
 
   const handleEnterClick = () => {
-    if (password === process.env.SUPER_SECRET_PASSWORD) {
+    // in client side not so secret ;D
+    if (password === process.env.NEXT_PUBLIC_SUPER_SECRET_PASSWORD) {
       localStorage.setItem('authenticated', 'true');
       setTimeout(() => {
         window.location.href = '/';
