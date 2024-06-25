@@ -35,18 +35,18 @@ const Header: React.FC = () => {
         <NavItem
           title='Internship'
           icon={<MdOutlineHistoryEdu />}
-          url='/internship/presentation'
+          url='/presentation'
         >
           <DropDown>
             <DropDownItem
               title='Presentation'
               icon={<SiMusicbrainz />}
-              url='/internship/presentation'
+              url='/presentation'
             />
             <DropDownItem
               title='Extra'
               icon={<GiPeaceDove />}
-              url='/internship/extra'
+              url='/extra'
             />
           </DropDown>
         </NavItem>
