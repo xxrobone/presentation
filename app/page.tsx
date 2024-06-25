@@ -160,26 +160,8 @@ const Home: React.FC<MainProps> = (props) => {
                     <span style={{ color: 'white' }}>
                       <TfiArrowCircleRight />
                     </span>
-                    &nbsp; They`re an online platform. Pioneering a new ecnomic
-                    model for the industry.
-                  </p>
-                </SlideInLeft>
-                <SlideInLeft>
-                  <p
-                    className={styles.p}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      color: 'var(--primary)',
-                      gap: '12px',
-                    }}
-                  >
-                    <span style={{ color: 'white' }}>
-                      <TfiArrowCircleRight />
-                    </span>
-                    &nbsp; Creating Web3 Casino Bankroll Liquidity Provider
-                    <br /> &nbsp; Seizing The Opportunity To Grow Investments In
-                    An Exciting, Evolving Market.
+                    They`re an online platform. Pioneering a new ecnomic model
+                    for the industry.
                   </p>
                 </SlideInLeft>
                 <SlideInLeft>
@@ -194,9 +176,27 @@ const Home: React.FC<MainProps> = (props) => {
                     <span style={{ color: 'white' }}>
                       <TfiArrowCircleRight />
                     </span>
-                    &nbsp; Degaming makes it possible to instantly deploy a
-                    Casino and start growing your own market!
-                    <br /> &nbsp; with their customizable SDK
+                    Creating Web3 Casino Bankroll Liquidity Provider
+                    <br />
+                    Seizing The Opportunity To Grow Investments In An Exciting,
+                    Evolving Market.
+                  </p>
+                </SlideInLeft>
+                <SlideInLeft>
+                  <p
+                    className={styles.p}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      color: 'var(--primary)',
+                    }}
+                  >
+                    <span style={{ color: 'white' }}>
+                      <TfiArrowCircleRight />
+                    </span>
+                    Degaming makes it possible to instantly deploy a Casino and
+                    start growing your own market!
+                    <br /> with their customizable SDK
                   </p>
                 </SlideInLeft>
                 <br />
@@ -394,7 +394,8 @@ const Home: React.FC<MainProps> = (props) => {
                   My main project <span>-&gt;</span>
                 </h2>
                 <p>
-                  The project Liquidity House i worked on during my internships final stage at the gaming
+                  The project Liquidity House i worked on during my internships
+                  final stage at the gaming
                 </p>
               </a>
 

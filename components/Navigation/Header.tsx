@@ -45,7 +45,7 @@ const Header: React.FC = () => {
             />
             <DropDownItem
               title='Extra'
-              icon={<GiPeaceDove />}
+              icon={<WiTrain />}
               url='/extra'
             />
           </DropDown>
