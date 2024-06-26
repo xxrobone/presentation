@@ -16,7 +16,7 @@ import {
   MdOutlineAnnouncement,
   MdOutlineGroups,
 } from 'react-icons/md';
-import { GiPeaceDove, GiFist, GiPlantRoots } from 'react-icons/gi';
+import { GiFist, GiPlantRoots } from 'react-icons/gi';
 import { WiTrain } from 'react-icons/wi';
 import { FiMusic } from 'react-icons/fi';
 import { FaRecordVinyl } from 'react-icons/fa';
@@ -32,6 +32,7 @@ const Header: React.FC = () => {
           icon={<MdOutlineAnnouncement />}
           url='/about'
         />
+
         <NavItem
           title='Internship'
           icon={<MdOutlineHistoryEdu />}
@@ -43,14 +44,11 @@ const Header: React.FC = () => {
               icon={<SiMusicbrainz />}
               url='/presentation'
             />
-            <DropDownItem
-              title='Extra'
-              icon={<WiTrain />}
-              url='/extra'
-            />
+            <DropDownItem title='Extra' icon={<WiTrain />} url='/extra' />
           </DropDown>
         </NavItem>
         <NavItem title='Project' icon={<RiArticleLine />} url='/project' />
+        <NavItem title='Assignment' icon={<GiPlantRoots />} url='/assignment' />
       </Nav>
     </div>
   );
