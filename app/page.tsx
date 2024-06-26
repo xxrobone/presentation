@@ -1,21 +1,19 @@
 'use client';
 import React, { useContext, useState, useEffect } from 'react';
-import Image from 'next/image';
+
 import { CursorContext } from '@/components/Cursor/CursorProvider';
 import GridLines from '@/components/Gridlines';
-import BgEllipse from '@/components/bgellipse/BgEllipse';
 import { AnimatedText } from '@/components/animations/AnimatedText';
 import Circle from '@/components/animations/Circle';
 import TopSectionsWrapper from '@/components/TopSectionsWrapper';
-import Magnetic from '@/components/magnetic/magnetic';
-import PreviewWrapper from '@/components/PreviewWrapper';
+
 import { TfiArrowCircleRight } from 'react-icons/tfi';
-import SectionCollection from '@/components/SectionCollection';
+
 import Grid from '@/components/Grid/';
 import GridItem from '@/components/Grid/GridItem';
 import Presentation3d from '@/components/Presentation3d';
 import { SlideInLeft } from '@/components/animations/reveal/SlideInLeft';
-import { Reveal } from '@/components/animations/reveal/Reveal';
+
 import Button from '@/components/Button';
 
 import styles from './page.module.css';
@@ -54,16 +52,9 @@ const data = [
 interface MainProps {}
 
 const Home: React.FC<MainProps> = (props) => {
-  const [showMoney, setShowMoney] = useState(false);
   const [showLoadingSection, setShowLoadingSection] = useState(true);
   const { setSize } = useContext(CursorContext);
 
-  const handleClick = () => {
-    setShowMoney(true);
-    setTimeout(() => {
-      setShowMoney(false);
-    }, 3000);
-  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -76,7 +67,6 @@ const Home: React.FC<MainProps> = (props) => {
     <main className={styles.main}>
       <>
         <div className='bg'></div>
-        <BgEllipse />
         <GridLines />
         <TopSectionsWrapper />
         <div className={styles.contentWrapper}>
