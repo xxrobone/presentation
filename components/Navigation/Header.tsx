@@ -47,7 +47,6 @@ const Header: React.FC = () => {
             <DropDownItem title='Extra' icon={<WiTrain />} url='/extra' />
           </DropDown>
         </NavItem>
-        <NavItem title='Project' icon={<RiArticleLine />} url='/project' />
         <NavItem title='Assignment' icon={<GiPlantRoots />} url='/assignment' />
       </Nav>
     </div>
