@@ -42,7 +42,7 @@ const Preview: React.FC<PreviewProps> = ({
           ease: 'power3.out',
         });
       }
-    } else if (previewRef.current) {
+    } /* else if (previewRef.current) {
       // Reset animations for non-active previews
       const previewImg = previewRef.current!.querySelector('.preview-img');
       if (previewImg) {
@@ -52,7 +52,7 @@ const Preview: React.FC<PreviewProps> = ({
           ease: 'power3.out',
         });
       }
-    }
+    } */
   }, [isActive, activeIndex]);
 
   return (

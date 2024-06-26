@@ -29,7 +29,8 @@ const Assignment = () => {
             week&apos;s progress. These demos were essential for receiving
             feedback and making necessary adjustments.
           </p>
-        </SlideInLeft>
+              </SlideInLeft>
+              <div className='w-full h-16'></div>
         <AnimatedText
           text='Introduction and Learning Phase'
           className={styles.title4}
@@ -52,7 +53,8 @@ const Assignment = () => {
             Remote Work: We worked remotely, maintaining regular communication
             through Slack and video calls via Teams.
           </p>
-        </SlideInLeft>
+              </SlideInLeft>
+              <div className='w-full h-16'></div>
         <AnimatedText text='Liquidity House' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -109,7 +111,8 @@ const Assignment = () => {
             required careful planning and execution to ensure a smooth migration
             without disrupting the development process.
           </p>
-        </SlideInLeft>
+              </SlideInLeft>
+              <div className='w-full h-16'></div>
         <AnimatedText
           text='Workflow and Technologies'
           className={styles.title4}
@@ -135,7 +138,8 @@ const Assignment = () => {
             blockchain technologies, though it was challenging to grasp
             entirely.
           </p>
-        </SlideInLeft>
+              </SlideInLeft>
+              <div className='w-full h-16'></div>
         <AnimatedText text='Challenges and Growth' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -152,7 +156,8 @@ const Assignment = () => {
             decisions, which helped me grow as a developer and understand the
             broader implications of my work.
           </p>
-        </SlideInLeft>
+              </SlideInLeft>
+              <div className='w-full h-16'></div>
         <AnimatedText text='Mentorship ' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -168,7 +173,8 @@ const Assignment = () => {
             Continuous Learning: Regular code reviews and collaborative
             problem-solving sessions were integral to my growth.
           </p>
-        </SlideInLeft>
+              </SlideInLeft>
+              <div className='w-full h-16'></div>
         <AnimatedText text='Conclusion' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -183,7 +189,9 @@ const Assignment = () => {
             future projects.
           </p>
         </SlideInLeft>
-      </section>
+          </section>
+          <AnimatedText text='Below you can see some of the work' className={styles.title4} />
+          <div className='w-full h-10'></div>
       <div className='w-screen h-screen relative'>
         <Slider />
       </div>
