@@ -25,15 +25,15 @@ const PreviewWrapper: React.FC = () => {
           />
         ))}
       </div>
-      {previews && previews.map((preview, index) => (
+      {previews && (
         <Preview
-          key={index}
+          key={activeIndex}
           preview={previews[activeIndex]}
           variant={itemVariants[activeIndex]}
-          isActive={activeIndex === index}
+          isActive={true}
           activeIndex={activeIndex}
         />
-      ))}
+      )}
     </div>
   );
 };

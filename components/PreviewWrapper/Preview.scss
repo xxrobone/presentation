@@ -231,7 +231,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     object-fit: contain;
     object-position: center;
     margin-bottom: 2rem;
@@ -239,6 +239,7 @@
 
   .preview .preview-desc {
     padding: 0 1rem;
+    height: fit-content;
   }
 
   /* Variant-specific styles */
@@ -247,6 +248,7 @@
   .preview.variant-3 .preview-img,
   .preview.variant-4 .preview-img {
     position: static;
+    height: fit-content;
   }
 
   .preview.variant-1 .preview-title,
@@ -254,6 +256,7 @@
   .preview.variant-3 .preview-title,
   .preview.variant-4 .preview-title {
     position: static;
+    height: fit-content;
   }
 
   .preview.variant-1 .preview-tags,
@@ -261,6 +264,7 @@
   .preview.variant-3 .preview-tags,
   .preview.variant-4 .preview-tags {
     position: static;
+    height: fit-content;
   }
 
   .preview.variant-1 .preview-desc,
@@ -268,9 +272,11 @@
   .preview.variant-3 .preview-desc,
   .preview.variant-4 .preview-desc {
     position: static;
+    height: fit-content;
   }
 
   .container {
     height: fit-content;
+    margin-bottom: 64px;
   }
 }

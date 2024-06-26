@@ -1,8 +1,14 @@
 'use client';
 import Section from '@/components/Section';
-import Evo from '@/public/degaming2.jpg';
-import Unity from '@/public/degaming3.jpg';
+import Evo from '@/public/laptop.jpg';
+import Unity from '@/public/codealong.jpg';
+import Tasks from '@/public/tasks.jpg';
+import Mentor from '@/public/mentor.jpg';
+import Standup from '@/public/standup.jpg';
+import Reflection from '@/public/reflection.jpg';
 import Fairplay from '@/public/degaming4.jpg';
+import DegamingI from '@/public/degaming3.jpg';
+import Degaming from '@/public/degaming2.jpg';
 import Lenis from '@studio-freight/lenis';
 
 import { useEffect, useState } from 'react';
@@ -22,7 +28,7 @@ export default function SectionCollection() {
   return (
     <div className='w-full h-full relative z-20'>
       <Section image={Evo} title='Summary' desc='' tag=''>
-        <p className='text-2xl'>
+        <p className='text-2xl drop-shadow-md'>
           During my internship as a frontend developer at DeGaming Group, I
           immersed myself in advanced web development technologies and explored
           the integration of Web-2 and introduction to Web-3 within the iGaming
@@ -34,7 +40,7 @@ export default function SectionCollection() {
         </p>
       </Section>
       <Section image={Unity} title='Purpose' desc='Makes it easier' tag=''>
-        <p className='text-2xl'>
+        <p className='text-2xl drop-shadow-md'>
           The purpose of my internship was to apply theoretical and practical
           knowledge gained from my education in a real-world setting at a
           company. It provided an opportunity to work in a professional team
@@ -48,7 +54,7 @@ export default function SectionCollection() {
         desc='DeGaming Group'
         tag=''
       >
-        <p className='text-2xl'>
+        <p className='text-2xl drop-shadow-md'>
           DeGaming is a pioneering on-chain gaming platform revolutionizing the
           iGaming industry with advanced Web3 technology. The company offers a
           wide range of games including casino, sports betting, poker, and
@@ -57,12 +63,12 @@ export default function SectionCollection() {
         </p>
       </Section>
       <Section
-        image={Fairplay}
+        image={Tasks}
         title='Responsibilities'
         desc='DeGaming Group'
         tag=''
       >
-        <p className='text-2xl pb-8'>
+        <p className='text-2xl drop-shadow-md pb-8'>
           During my internship, I worked with the following technologies and
           tools:
         </p>
@@ -115,12 +121,12 @@ export default function SectionCollection() {
         </div>
       </Section>
       <Section
-        image={Fairplay}
+        image={Mentor}
         title='Mentorship'
         desc='Mikael Bolmstam'
         tag=''
       >
-        <p className='text-2xl'>
+        <p className='text-2xl drop-shadow-md'>
           I was fortunate to be mentored by Mikael Bolmstam, an experienced
           full-stack developer, who provided continuous guidance and
           constructive feedback throughout my internship. His mentorship was
@@ -128,12 +134,12 @@ export default function SectionCollection() {
         </p>
       </Section>
       <Section
-        image={Fairplay}
+        image={Standup}
         title='Execution and Results'
-        desc='Finnish it!'
+        desc='How is your progress?'
         tag=''
       >
-        <p className='text-2xl'>
+        <p className='text-2xl drop-shadow-md'>
           Agile principles were applied in managing and delivering the Liquidity
           House project at DeGaming. Scrum methodology with regular sprints
           ensured continuous delivery and feedback loops. As a frontend
@@ -143,8 +149,8 @@ export default function SectionCollection() {
           solutions.
         </p>
       </Section>
-      <Section image={Fairplay} title='Reflection' desc='Did i like it?' tag=''>
-        <p className='text-2xl'>
+      <Section image={Reflection} title='Reflection' desc='Did i like it?' tag=''>
+        <p className='text-2xl drop-shadow-md'>
           My internship at DeGaming deepened my understanding of web development
           and the integration of blockchain technology in iGaming. It
           underscored the importance of collaboration, effective communication,
@@ -152,12 +158,12 @@ export default function SectionCollection() {
         </p>
       </Section>
       <Section
-        image={Fairplay}
+        image={DegamingI}
         title='Conclusion and Discussion'
         desc='The end?!'
         tag=''
       >
-        <p className='text-2xl'>
+        <p className='text-2xl drop-shadow-md'>
           Reflecting on my experience, I identified areas where process
           improvements could enhance efficiency and workflow within the team.
           Recommendations included implementing test automation, increasing code
@@ -165,8 +171,8 @@ export default function SectionCollection() {
           development skills.
         </p>
       </Section>
-      <Section image={Fairplay} title='Recommendation' desc='YES 100%' tag=''>
-        <p className='text-2xl'>
+      <Section image={Degaming} title='Recommendation' desc='YES 100%' tag=''>
+        <p className='text-2xl drop-shadow-md'>
           I highly recommend DeGaming Group for anyone considering an internship
           placement. It provided a challenging yet supportive environment to
           work with cutting-edge technologies and gain practical experience that
