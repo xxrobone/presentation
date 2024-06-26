@@ -29,8 +29,8 @@ const Assignment = () => {
             week&apos;s progress. These demos were essential for receiving
             feedback and making necessary adjustments.
           </p>
-              </SlideInLeft>
-              <div className='w-full h-16'></div>
+        </SlideInLeft>
+        <div className='w-full h-16'></div>
         <AnimatedText
           text='Introduction and Learning Phase'
           className={styles.title4}
@@ -42,9 +42,10 @@ const Assignment = () => {
             Here are some key aspects:
             <br />
             <br />
-            Introduction to Tools: I got hands-on experience with VS Code for
-            development, Notion for task management, and Postman for API
-            testing. <br />
+            Introduction to Tools and Tech: I got hands-on experience all tools
+            for development, Notion for task management, and Postman for API
+            testing. Also a short introduction to Wagmi, Viem, Smart Contract
+            etc. <br />
             <br />
             Mentorship: Mikael, my mentor, was always available to help,
             providing guidance and support, which was invaluable during this
@@ -53,8 +54,8 @@ const Assignment = () => {
             Remote Work: We worked remotely, maintaining regular communication
             through Slack and video calls via Teams.
           </p>
-              </SlideInLeft>
-              <div className='w-full h-16'></div>
+        </SlideInLeft>
+        <div className='w-full h-16'></div>
         <AnimatedText text='Liquidity House' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -72,28 +73,28 @@ const Assignment = () => {
             Additional Meetings
             <br />
             To support the development of Liquidity House, we held dedicated
-            meetings every Thursday in addition to our daily stand-ups. These
-            meetings were crucial for coordinating efforts, addressing
-            challenges, and ensuring that everyone was aligned with the
-            project&apos;s goals and timelines.
+            meetings every Thursday in addition to our daily stand-ups. Magnus
+            was the product owner and Anik designer. These meetings were crucial
+            for coordinating efforts, addressing challenges, and ensuring that
+            everyone was aligned with the project&apos;s goals and timelines.
             <br />
             <br />
             Technical Decisions
             <br />
             I had the opportunity to take charge of several technical aspects of
-            the project:
+            the project but choose most of what already was used:
             <br />
             <br />
             Technology Selection: I selected and implemented key technologies
             such as MUI for the UI components, Next.js for the application
-            framework, Wagmi for interacting with blockchain, and ImageKit for
-            optimized image management.
+            framework, Wagmi for interacting with blockchain, and Mikael added
+            ImageKit for optimized image management.
             <br />
             <br />
             Design Changes: The rebranding from GLS to Liquidity House included
             not just a name change but also significant updates to the
             platform&apos;s design and some changes in functionality, which I
-            was actively involved in implementing.
+            was actively involved in implementing, design was done by Anik.
             <br />
             <br />
             Backend Integration
@@ -101,18 +102,21 @@ const Assignment = () => {
             The backend integration was another critical area of focus:
             <br />
             <br />
-            Initial Setup on Heroku: Initially, our backend services were hosted
-            on Heroku. This setup provided a convenient starting point for
-            development and testing.
+            Initial Setup on Heroku: Initially, degamings backend services were
+            hosted on Heroku. This setup provided a convenient starting point
+            for development and testing. I had to add a bit of mockdata while
+            working with funcationality
             <br />
             <br />
-            Transition to AWS: As the project progressed, we transitioned the
-            backend to AWS to enhance scalability and performance. This shift
-            required careful planning and execution to ensure a smooth migration
-            without disrupting the development process.
+            Transition to AWS: As the company and projects progressed and grow
+            in size, Degaming transitioned the backend to AWS to enhance
+            scalability and performance. This shift required careful planning
+            and execution to ensure a smooth migration without disrupting the
+            development process. I dident implement any backend but got to
+            observe two masters at work, Mikeal and Lowe.
           </p>
-              </SlideInLeft>
-              <div className='w-full h-16'></div>
+        </SlideInLeft>
+        <div className='w-full h-16'></div>
         <AnimatedText
           text='Workflow and Technologies'
           className={styles.title4}
@@ -131,15 +135,19 @@ const Assignment = () => {
             <br />
             <br />
             MongoDB: Worked extensively with MongoDB for database management,
-            especially during the initial project phase.
+            especially during the initial project phase, Portal.
+            <br />
+            <br />
+            GraphQL: Used for interacting with the APIs, enabling efficient data
+            fetching and manipulation.
             <br />
             <br />
             Web3 Technologies: Gained exposure to Web3, smart contracts, and
             blockchain technologies, though it was challenging to grasp
             entirely.
           </p>
-              </SlideInLeft>
-              <div className='w-full h-16'></div>
+        </SlideInLeft>
+        <div className='w-full h-16'></div>
         <AnimatedText text='Challenges and Growth' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -156,8 +164,8 @@ const Assignment = () => {
             decisions, which helped me grow as a developer and understand the
             broader implications of my work.
           </p>
-              </SlideInLeft>
-              <div className='w-full h-16'></div>
+        </SlideInLeft>
+        <div className='w-full h-16'></div>
         <AnimatedText text='Mentorship ' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -173,8 +181,8 @@ const Assignment = () => {
             Continuous Learning: Regular code reviews and collaborative
             problem-solving sessions were integral to my growth.
           </p>
-              </SlideInLeft>
-              <div className='w-full h-16'></div>
+        </SlideInLeft>
+        <div className='w-full h-16'></div>
         <AnimatedText text='Conclusion' className={styles.title4} />
         <SlideInLeft>
           <p className={styles.p}>
@@ -189,9 +197,12 @@ const Assignment = () => {
             future projects.
           </p>
         </SlideInLeft>
-          </section>
-          <AnimatedText text='Below you can see some of the work' className={styles.title4} />
-          <div className='w-full h-10'></div>
+      </section>
+      <AnimatedText
+        text='Below you can see some of the work'
+        className={styles.title4}
+      />
+      <div className='w-full h-10'></div>
       <div className='w-screen h-screen relative'>
         <Slider />
       </div>
