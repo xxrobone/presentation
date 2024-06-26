@@ -10,7 +10,7 @@ const Assignment = () => {
     <div className='w-screen h-full pt-24 md:pt-40 pointer-events-auto'>
       <section className={styles.section} id='read'>
         <AnimatedText
-          text='First Project: The Portal'
+          text='First Assignment: The Portal'
           className={styles.title4}
         />
         <SlideInLeft>
