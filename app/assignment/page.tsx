@@ -4,10 +4,12 @@ import Slider from '@/components/Slider';
 import styles from '@/app/page.module.css';
 import { SlideInLeft } from '@/components/animations/reveal/SlideInLeft';
 import { AnimatedText } from '@/components/animations/AnimatedText';
+import PageTransition from '@/components/animations/PageTransition';
 
 const Assignment = () => {
   return (
-    <div className='w-screen h-full pt-24 md:pt-40 pointer-events-auto'>
+      <div className='w-screen h-full pt-24 md:pt-40 pointer-events-auto'>
+           <PageTransition />
       <section className={styles.section} id='read'>
         <AnimatedText
           text='First Assignment: The Portal'

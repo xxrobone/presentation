@@ -3,10 +3,12 @@ import { AnimatedText } from '@/components/animations/AnimatedText';
 import PreviewWrapper from '@/components/PreviewWrapper';
 import SectionCollection from '@/components/SectionCollection';
 import React from 'react';
+import PageTransition from '@/components/animations/PageTransition';
 
 const Presentation = () => {
   return (
     <div>
+      <PageTransition />
       <SectionCollection />
       <section className='center'>
       <AnimatedText text='Tech Team + Boss' className='md:text-7xl text-4xl font-black md:pl-40 pt-20' />

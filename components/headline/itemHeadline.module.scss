@@ -1,0 +1,9 @@
+@use '@/styles/base/' as *;
+
+.item_headline {
+  width: 100%;
+  color: transparent;
+  -webkit-text-stroke: 1px $color-client-3 !important;
+  font-size: $font-size-xl;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.335));
+}
