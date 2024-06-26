@@ -223,6 +223,7 @@ const Home: React.FC<MainProps> = (props) => {
                     received, and the valuable lessons I learned. Enjoy!
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Purpose' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -235,6 +236,7 @@ const Home: React.FC<MainProps> = (props) => {
                     and the working life of a developer.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Tech' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -256,6 +258,7 @@ const Home: React.FC<MainProps> = (props) => {
                     fetching data.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Tools' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -273,6 +276,7 @@ const Home: React.FC<MainProps> = (props) => {
                     Figma: For design implementation.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Tasks' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -291,6 +295,7 @@ const Home: React.FC<MainProps> = (props) => {
                     purposes.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Work' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -305,6 +310,7 @@ const Home: React.FC<MainProps> = (props) => {
                     purposes.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Features' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -337,6 +343,7 @@ const Home: React.FC<MainProps> = (props) => {
                     investments.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='My Mentor' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -348,6 +355,7 @@ const Home: React.FC<MainProps> = (props) => {
                     development and project management.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Reflection' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -398,6 +406,7 @@ const Home: React.FC<MainProps> = (props) => {
                     grow professionally in my field.
                   </p>
                 </SlideInLeft>
+                <div className='w-full h-16'></div>
                 <AnimatedText text='Conclusion' className={styles.title4} />
                 <SlideInLeft>
                   <p className={styles.p}>
@@ -449,7 +458,7 @@ const Home: React.FC<MainProps> = (props) => {
               </a>
 
               <a
-                href='/project'
+                href='/assignment'
                 className={styles.card}
                 onMouseEnter={() => {
                   setSize('mask');
@@ -457,11 +466,11 @@ const Home: React.FC<MainProps> = (props) => {
                 onMouseLeave={() => setSize('small')}
               >
                 <h2>
-                  My main project <span>-&gt;</span>
+                  My main assignment <span>-&gt;</span>
                 </h2>
                 <p>
                   The project Liquidity House i worked on during my internships
-                  final stage at the gaming
+                  final stage at the gaming was my main assignment and responsibility
                 </p>
               </a>
 
