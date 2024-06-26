@@ -28,12 +28,6 @@ const Header: React.FC = () => {
       <Nav>
         <NavItem title='Home' icon={<AiOutlineHome />} url='/' />
         <NavItem
-          title='About me'
-          icon={<MdOutlineAnnouncement />}
-          url='/about'
-        />
-
-        <NavItem
           title='Internship'
           icon={<MdOutlineHistoryEdu />}
           url='/presentation'
