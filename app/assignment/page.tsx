@@ -7,7 +7,7 @@ import { AnimatedText } from '@/components/animations/AnimatedText';
 
 const Assignment = () => {
   return (
-    <div className='w-screen h-full pt-24 md:pt-40 pointer-events-auto'>
+      <div className='w-screen h-full pt-24 md:pt-40 pointer-events-auto'>
       <section className={styles.section} id='read'>
         <AnimatedText
           text='First Assignment: The Portal'
