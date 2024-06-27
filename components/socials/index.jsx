@@ -19,7 +19,7 @@ const Socials = () => {
         <Magnetic>
           <Link
             data-icon='email'
-            href='mailto:robert@cogwork.se'
+            href='mailto:robertwagar@gmail.com'
             target='_blank'
             rel='noreferrer noopener'
           >
