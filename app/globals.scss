@@ -217,34 +217,6 @@ a {
   pointer-events: none;
 }
 
-.settings {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  left: 2vw;
-  top: 20vh;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  filter: drop-shadow(0 0 5px 8px #ae89f4);
-  transition: transform 0.3s ease; 
-  z-index: 10000;
-  pointer-events: auto;
-}
-
-.text {
-  position: fixed;
- font-size: 1rem;
-  left: 4vw;
-  top: 8vh;
-  cursor: pointer;
-  border: none;
-}
-
-.settings:hover {
-  animation: rotate 10s linear infinite; 
-}
-
 @keyframes rotate {
   from {
     transform: rotate(0deg); 

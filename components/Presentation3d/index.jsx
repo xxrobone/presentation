@@ -71,9 +71,9 @@ function Presentation3d() {
     <>
       <AvatarBackground selectedScript={selectedScript} className='pres' />
 
-      <p className='text'>Avatar Voice</p>
+     
       <FcSettings className='settings' onClick={toggleVisibility} />
-
+      <p className='text'>Click for menu</p>
       <div className={isVisible ? 'buttons show' : 'buttons'}>
         <button onClick={() => handleTagClick('stop')}>Stop</button>
         <button onClick={() => handleTagClick('welcome')}>Welcome</button>

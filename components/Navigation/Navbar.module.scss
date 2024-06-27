@@ -49,7 +49,7 @@
   border-radius: 20px;
   border: 1px solid #888;
   margin: 0 0.2rem;
-background: rgba(0, 0, 0, 0.416);
+  background: rgba(0, 0, 0, 0.416);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -117,7 +117,6 @@ a .mobile {
 }
 
 .nav_item:hover {
- 
   background: linear-gradient(135deg, #e44141, #4f2af3);
 }
 
@@ -145,7 +144,7 @@ a .mobile {
     cursor: pointer;
     padding: 1.25rem 0.25rem;
     border-radius: 50%;
-    background-color: $color-client-2;
+    background: linear-gradient(135deg, #e44141, #4f2af3);
     outline: none;
     border: none;
     box-shadow: 0 0 2px 2px rgba(8, 8, 8, 0.205);
@@ -175,19 +174,21 @@ a .mobile {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
     transform: translateX(110%);
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 100;
 
-    .nav_item:nth-child(1) {
-      margin-top: 10rem;
-    }
     .nav_item {
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       left: 30vw;
       height: fit-content;
+      margin: 1rem 0;
 
       &:hover {
         background-color: transparent;
@@ -197,7 +198,7 @@ a .mobile {
     .nav_links {
       padding: 1rem 2rem 1rem 0rem;
       border-radius: 2px;
-      display: block;
+      display: inline-flex;
     }
 
     .nav_links:hover {
@@ -213,7 +214,7 @@ a .mobile {
     width: 100%;
     height: 100vh;
     transform: translateX(0);
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -221,6 +222,8 @@ a .mobile {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 100;
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
   }
   .nav_item a:before {
     opacity: 0;
@@ -240,9 +243,6 @@ a .mobile {
 }
 
 @media screen and (max-width: 768px) {
-  .menu_icon {
-    background: linear-gradient(135deg, #e44141, #4f2af3);
-  }
   .nav_menu {
     background: linear-gradient(135deg, #e44141, #4f2af3);
     .nav_item {
@@ -260,7 +260,7 @@ a .mobile {
       user-select: none;
     }
 
-    .nav_item:nth-child(1) {
+    .nav_item:first-of-type {
       margin-top: 8rem;
     }
 
@@ -293,7 +293,7 @@ a .mobile {
       left: 1vw;
     }
 
-    .nav_item:nth-child(1) {
+    .nav_item:first-of-type {
       margin-top: 4rem;
     }
 
@@ -312,5 +312,17 @@ a .mobile {
   }
   .nav_item a:before {
     opacity: 0;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
