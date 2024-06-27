@@ -3,7 +3,6 @@ import React, { useContext, useState, useEffect } from 'react';
 
 import { CursorContext } from '@/components/Cursor/CursorProvider';
 import GridLines from '@/components/Gridlines';
-import { AnimatedText } from '@/components/animations/AnimatedText';
 import Circle from '@/components/animations/Circle';
 import TopSectionsWrapper from '@/components/TopSectionsWrapper';
 
@@ -12,11 +11,13 @@ import { TfiArrowCircleRight } from 'react-icons/tfi';
 import Grid from '@/components/Grid/';
 import GridItem from '@/components/Grid/GridItem';
 import Presentation3d from '@/components/Presentation3d';
-import { SlideInLeft } from '@/components/animations/reveal/SlideInLeft';
 
+import { AnimatedText } from '@/components/animations/AnimatedText';
+import { SlideInLeft } from '@/components/animations/reveal/SlideInLeft';
+import styles from './page.module.css';
 import Button from '@/components/Button';
 
-import styles from './page.module.css';
+
 
 const data = [
   { image: '/chillroom.jpg', title: 'Title', description: 'Description 1' },

@@ -408,3 +408,33 @@
     transform: rotate(0deg);
   }
 }
+
+
+.extra {
+  display: flex;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.left, .right {
+ padding: 4rem 5rem;
+ 
+}
+
+.left {
+width: 49vw;
+height: 100%;
+}
+
+.right {
+  width: 49vw;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .left, .right {
+    padding: 4rem 1rem;
+    
+   }
+
+}
