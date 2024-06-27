@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       <Nav>
         <NavItem title='Home' icon={<AiOutlineHome />} url='/' />
         <NavItem
-          title='Internship'
+          title='Internship Report'
           icon={<MdOutlineHistoryEdu />}
           url='/presentation'
         >
