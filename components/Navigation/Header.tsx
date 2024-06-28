@@ -38,7 +38,7 @@ const Header: React.FC = () => {
               icon={<SiMusicbrainz />}
               url='/presentation'
             />
-            <DropDownItem title='Extra' icon={<WiTrain />} url='/extra' />
+            <DropDownItem title='Nothing' icon={<WiTrain />} url='/assignment' />
           </DropDown>
         </NavItem>
         <NavItem title='Assignment' icon={<GiPlantRoots />} url='/assignment' />
