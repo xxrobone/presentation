@@ -1,6 +1,6 @@
 'use client';
 import React, { useContext, useState, useEffect } from 'react';
-
+import Link from 'next/link';
 import { CursorContext } from '@/components/Cursor/CursorProvider';
 import GridLines from '@/components/Gridlines';
 import Circle from '@/components/animations/Circle';
@@ -16,8 +16,6 @@ import { AnimatedText } from '@/components/animations/AnimatedText';
 import { SlideInLeft } from '@/components/animations/reveal/SlideInLeft';
 import styles from './page.module.css';
 import Button from '@/components/Button';
-
-
 
 const data = [
   { image: '/chillroom.jpg', title: 'Title', description: 'Description 1' },
@@ -55,7 +53,6 @@ interface MainProps {}
 const Home: React.FC<MainProps> = (props) => {
   const [showLoadingSection, setShowLoadingSection] = useState(true);
   const { setSize } = useContext(CursorContext);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -110,15 +107,9 @@ const Home: React.FC<MainProps> = (props) => {
                 the CEO and Co-Founder of DeGaming - BOSS MAN!
                 <br />
               </p>
-              <div
-                onMouseEnter={() => {
-                  setSize('large');
-                }}
-                onMouseLeave={() => setSize('small')}
-                className='pointer-events-auto cursor-pointer'
-              >
+              <div className='pointer-events-auto cursor-pointer'>
                 <Button theme='outlined'>
-                  <a href='/presentation#team'>The team</a>
+                  <Link href='/presentation/#team'>The team</Link>
                 </Button>
               </div>
             </div>
@@ -461,7 +452,8 @@ const Home: React.FC<MainProps> = (props) => {
                 </h2>
                 <p>
                   The project Liquidity House i worked on during my internships
-                  final stage at the gaming was my main assignment and responsibility
+                  final stage at the gaming was my main assignment and
+                  responsibility
                 </p>
               </a>
 
